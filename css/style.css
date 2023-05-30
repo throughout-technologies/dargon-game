@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+        overflow-x: hidden;
+        background-image: url('https://img.freepik.com/free-vector/halftone-texture-border-background_1409-1839.jpg?w=826&t=st=1680090348~exp=1680090948~hmac=709366d325be4612cf7103aa41e1a62659d85731eb6bbe580dce0ded7dac6a7d');
+        background-size: cover;
+       
+    
+}
+.gameContainer{
+    /* background-image: url(/assets/bgg.png); */
+    /* border-bottom: 5px solid red; */
+    
+    border-bottom: 5px solid transparent;
+    border-image:  linear-gradient(0.25turn, rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%); ;
+    border-image-slice: 1;
+    width:100%;
+  
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position:  0 -58vh;
+    width: 100%;
+    height: 110vh;
+    margin-top: 1vh;
+    position: absolute;
+
+    
+}
+ 
+ 
+.dino{
+    background-image: url(/assets/dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:174px;    /*233px; */
+    height:  88px  ;     /*114px;*/
+    bottom:0;
+    left: 5px;
+    /* top:16vh; */
+    float: left;
+    position: relative;
+    margin-top: 16vh;
+}
+
+.obstacle{
+    width: 119px;
+    height: 79px;
+    background-image: url(/assets/dragon.png);
+    background-size: cover;
+    bottom: 0;
+    /* top:18vh; */
+    /* right: 3vw; */
+    /* float: left; */
+    left: 5px;
+    position: relative;
+    margin-top: 18vh;
+}
+
+.animateDino{
+    animation: dino 0.6s linear;
+}
+
+.obstacleAni{
+    animation: obstacleAni 5s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    top:0px;
+    font-size: 43px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+
+ 
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 240px;
+    }
+    100%{
+        bottom: 0; 
+    }
+}
+
+@keyframes obstacleAni{
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+@media only screen and (min-width:768px){
+    .gameContainer{
+        height: 70vh;
+    }
+  
+}
+    
+
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+    .gameContainer{
+        height: 39vh;
+    }
+
+        .gameOver{
+            font-size: 28px;
+        }
+
+        /* .dino{
+            width: 183px;
+            height: 93px;
+        }
+        .obstacle{
+            width: 97px;
+            height: 66px;
+        } */
+}
+
+@media only screen and (max-width: 500px)  {
+    .gameContainer{
+        height: 25vh;   
+    }
+
+    .gameOver{
+        font-size: 20px;
+    }
+
+    /* .dino{
+        width: 167px;
+        height: 85px;
+    }
+    .obstacle{
+        
+    } */
+}
+

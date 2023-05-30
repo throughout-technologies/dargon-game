@@ -1,0 +1,87 @@
+
+/* #containermain{
+    width: ;
+    height:auto;
+   }
+    */
+   
+   #progressid{
+       height: 10px;
+   }
+   
+   
+   .form-control{
+       padding:20px;
+   
+   }
+   
+   .form-floating>.form-control, .form-floating> .formselect{
+       height: calc(36.5px + 2px);
+   }
+   
+   .form-floating > label{
+    padding:0.4rem .75rem;
+   }
+   
+   
+   .button {
+       position:relative;
+       border: none;
+       display: inline-block;
+       box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+             inset 0px -5px 0px 0px rgba(0,0,0,0.3),
+          inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       border-radius: 5px;
+       overflow: hidden;
+       cursor: pointer;
+       margin-bottom: 2px;
+      }
+      
+      .button:active {
+       box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+             inset 0px -2px 0px 0px rgba(0,0,0,0.3),
+          inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+       top: 3px;
+      }
+      
+      
+      .wood {
+       background: url(http://1.bp.blogspot.com/-tXavBQFjNFQ/VMSaYaq7PtI/AAAAAAAADSc/awMPRe3yu5A/s1600/wood_pattern.png);
+      }
+   
+   
+
+
+
+        
+/*    
+       .gameboard{
+           width: 90%;
+           height: 70vh;
+           background-image: url(/assets/board1.jpg);
+           background-repeat: no-repeat;
+           background-size: 100%; 
+           
+       }
+   
+       @media only screen and (min-width:768px){
+           .gameboard{
+               height: 70vh;
+           }
+       }
+           
+       
+       
+       @media only screen and (max-width: 768px) and (min-width: 500px) {
+           .gameboard{
+               height: 39vh;
+           }
+       }
+   
+       @media only screen and (max-width: 500px)  {
+           .gameboard{
+               height: 25vh;
+           }
+       } */

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Game</title>
+
+      <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <!-- Bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Manual Css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    
+</head>
+<body>
+       <!-- Mannual Js -->
+    <script src="js/game.js"></script>
+
+     <!-- Bootstrap js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+     crossorigin="anonymous"></script>
+    
+
+  <!--  Upper Body -->
+
+  <div class="container border rounded mt-4" style="background-color: whitesmoke; height: auto;">
+
+    <!--  progress bar -->
+    <div>
+        <!-- main heading -->
+        <div class="text-center mt-1">
+            <p style=" font-size: 25px;">Let's Connect! Win the Game! Start with the Coffee</p>
+            <p id="scoreCont" class="invisible"></p>
+        </div>
+        <!-- progress bar -->
+        <div class="mt-1"><i class="bi bi-trophy" id="trophy"> 0/6 </i></div>
+
+        <div class="progress">
+            <div id="progressid" class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width:0%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <div class="text-center mt-2 mb-2">
+          <small>Let's Play Game</small> 
+          <button class="bg-info fs-3 rounded text-center" id="start"  style="display:block; text-align: center;" onclick="f()">Start Game</button>
+        </div>
+
+ 
+      </div>
+
+
+    <!-- forms -->
+    <form class="row  " id="contact-form"> 
+        
+    </form>
+
+    <!-- Button -->
+    <div class="mb-1 text-center" >
+        <!-- <button id="start" onclick="gameStart()" class="button wood btn-lg w-auto fs-6 fw-bolder" style=" border-radius: 25px; padding: 13px;"> <i class="bi bi-check2-square"></i> START</button> -->
+      
+        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="formSubmit()" id="submit" class="invisible button wood btn-lg w-auto fs-6 fw-bolder" style=" border-radius: 25px; padding: 13px;"> <i class="bi bi-check2-square"></i> Submit</button>
+       <div id="timerid" class=""> </div>
+    </div>
+  </div>
+
+
+     <!-- Game Body-->
+
+   <div class="row mt-2">
+    
+    <div class="gameContainer" style="height: auto;" >
+        <div class="gameOver">Welcome to Dragon Adventures Game</div>
+        
+        <div class="dino  mb-0"></div>
+
+        <!-- <div id="scoreCont">Your Score: 0</div> -->
+        <!-- obstacleAni -->
+        <div class="obstacle mb-0" id="dd"></div>
+    </div>
+   </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+</body>
+</html>
